@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+<head>  
+<script type='text/javascript'>
+window.onload = function () {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	theme: "light2", // "light1", "light2", "dark1", "dark2"
+	animationEnabled: true,
+	title:{
+		text: "FUT 18 major player acquisition index"   
+	},
+	axisX: {
+		interval: 1,
+		intervalType: "month",
+		valueFormatString: "MMM"
+	},
+	axisY:{
+		title: "Price in FUT coins",
+		valueFormatString: "#0"
+	},
+	legend:{
+		cursor:"pointer"
+	},
+	data: [{        
+		type: "doughnut",
+        indexLabelPlacement: "outside",
+        showInLegend: true,
+		xValueType: "dateTime",
+		markerSize: 12,
+		xValueFormatString: "MMM DD, YYYY",
+		yValueFormatString: "###",
+		dataPoints: [        
+			{y: 48500, label: "Giroud (Puskas); Bought: 15/Nov/2017", name: "Bought for: 48500" },
+			{y: 162000, label: "Koscielny (FUTMAS); Bought: 24/Dec/2017", name: "Completed for: 162000" },
+			{y: 30000, label: "Pirlo (EOEA); Bought: 27/Dec/2017", name: "Completed for: 30000" },
+			{y: 79000, label: "Mustafi (2IF); Bought: 21/Jan/2018", name: "Bought for: 79000" },
+			{y: 48500, label: "Monreal (1IF); Bought: 24/Jan/2018", name: "Bought for: 48500" },
+			{y: 71500, label: "Mkhitaryan (OTW); Bought: 16/Mar/2018", name: "Bought for: 71500" },
+			{y: 52500, label: "Cech (1IF); Bought: 16/Mar/2018", name: "Bought for: 52500" },
+			{y: 56000, label: "Ramsey (eMOTM); Bought: 18/Apr/2018", name: "Bought for: 56000" },
+			{y: 35000, label: "Nainggolan (NIF); Bought: 21/Apr/2018", name: "Bought for: 35000" },
+			{y: 187100, label: "Thiago Alcantara (SBC); Bought: 22/Apr/2018", name: "Completed for: 187100" },
+			{y: 55000, label: "Kolasinac (2IF); Bought: 24/Apr/2018", name: "Bought for: 55000" },
+			{y: 180000, label: "Rui Costa* (Base Icon SBC); Bought: 25/Apr/2018", name: "Bought for: 180000" },
+			{y: 40000, label: "Cazorla (86) (SBC); Bought: 30/Apr/2018", name: "Completed for: 40000" },
+			{y: 280000, label: "Pires* (Prime); Bought: 09/May/2018", name: "Bought for: 280000" },
+			{y: 120750, label: "Hamsik (SBC); Bought: 10/May/2018", name: "Completed for: 120750" },
+			{y: 280000, label: "Litmanen* (Prime); Bought: 10/May/2018", name: "Bought for: 280000" },
+			{y: 1100000, label: "Thierry Henry (Prime Icon SBC); Bought: 12/May/2018", name: "Completed for: 1100000" },
+			{y: 279600, label: "De Bruyne (SBC); Bought: 31/May/2018", name: "Completed for: 279600" },
+			{y: 18500, label: "Kante (NIF-WU); Bought: 01/Jun/2018", name: "Bought for: 18500" },
+			{y: 120000, label: "Zanetti (Prime Icon SBC); Bought: 03/Jun/2018", name: "Completed for: 120000" },
+			{y: 40000, label: "Ramos (NIF); Bought: 10/Jun/2018", name: "Bought for: 40000" },
+			{y: 66750, label: "Younes (SBC); Bought: 15/Jun/2018", name: "Completed for: 66750" },
+			{y: 92500, label: "Cavani (SBC); Bought: 26/Jun/2018", name: "Completed for: 92500" },
+			{y: 319000, label: "Cristiano Ronaldo (NIF); Bought: 30/Jun/2018", name: "Bought for: 319000" }
+		]
+	}]
+});
+chart.render();
+
+}
+</script>
+</head>
+<body>
+<div id="chartContainer" style="height: 600px; width: 95%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+</html>
