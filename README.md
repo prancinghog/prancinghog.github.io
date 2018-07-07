@@ -1,2 +1,2 @@
-## FUT18 club - prominent player data
-
+title: Prancing Hog's page
+layout: default
